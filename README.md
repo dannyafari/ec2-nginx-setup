@@ -6,8 +6,7 @@ Provisions an AWS ec2 instance with SSH access and installs nginx
 - AWS credentials configured
 - Existing ec2 key pair
 
-##Usage
-
+## Usage
 ```bash
 terraform init
 terraform validate
