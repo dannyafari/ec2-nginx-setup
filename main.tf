@@ -25,7 +25,7 @@ resource "aws_security_group" "ssh_access" {
 resource "aws_instance" "nginx_server" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
-  vpc_security_group-ids = [aws_security_group.ssh_access.id]
+  vpc_security_group_ids = [aws_security_group.ssh_access.id]
   key_name               = var.key_name
 
   user_data              = file("user_data.sh")
